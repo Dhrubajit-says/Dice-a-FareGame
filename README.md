@@ -2,7 +2,7 @@ Fair Dice Game : <br>
 <br>
 This is a command-line-based fair dice game where you compete against the computer using sets of dice. The game uses cryptographic techniques (HMAC) to ensure transparency and fairness in random number generation and decision-making.
 <br>
-**How to Play :** <br>
+**How to Play :** 
 <br>
 **Game Setup**<br>
 Provide at least two sets of dice as command-line arguments.<br>
