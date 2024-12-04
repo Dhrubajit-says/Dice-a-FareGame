@@ -1,6 +1,7 @@
 Fair Dice Game : <br>
 <br>
-This is a command-line-based fair dice game where you compete against the computer using sets of dice. The game uses cryptographic techniques (HMAC) to ensure transparency and fairness in random number generation and decision-making.<br>
+This is a command-line-based fair dice game where you compete against the computer using sets of dice. The game uses cryptographic techniques (HMAC) to ensure transparency and fairness in random number generation and decision-making.
+<br>
 **How to Play :** <br>
 <br>
 **Game Setup**<br>
@@ -23,7 +24,6 @@ You guess the computer’s selection.<br>
 If your guess is correct, you throw first. Otherwise, the computer throws first.<br>
 <br>
 Choose Dice:<br>
-
 Whoever throws first selects a dice set first.<br>
 The other player then selects their dice from the remaining sets.<br>
 <br>
@@ -60,17 +60,17 @@ Example: Consider two dice sets:<br>
 Total comparisons = 3 (sides in Dice 1) × 3 (sides in Dice 2) = 9<br>
 **Winning comparisons:**
 <br>
-`3 vs 4 → lose`
-`3 vs 6 → lose`
-`3 vs 7 → lose`
-`5 vs 4 → win`
-`5 vs 6 → lose`
-`5 vs 7 → lose`
-`8 vs 4 → win`
-`8 vs 6 → win`
-`8 vs 7 → win`
-`Total wins = 4`.
-`Probability = 4/9 ≈ 0.4444.`
+`3 vs 4 → lose`<br>
+`3 vs 6 → lose`<br>
+`3 vs 7 → lose`<br>
+`5 vs 4 → win`<br>
+`5 vs 6 → lose`<br>
+`5 vs 7 → lose`<br>
+`8 vs 4 → win`<br>
+`8 vs 6 → win`<br>
+`8 vs 7 → win`<br>
+`Total wins = 4`<br>
+`Probability = 4/9 ≈ 0.4444.`<br>
 <br>
 **Display Format:**<br>
 During the game, the win probabilities are shown in a table format.<br>
@@ -102,10 +102,11 @@ Verify in Python:
 HMAC Transparency:<br>
 <br>
 All random selections made by the computer are protected by an HMAC (Hash-Based Message Authentication Code). The HMAC is shown before revealing the actual choice to ensure fairness.
-After each step, the key used to generate the HMAC is revealed, allowing players to verify the fairness of the random selection.<br>
+After each step, the key used to generate the HMAC is revealed, allowing players to verify the fairness of the random selection. 
+<br>
 **Help Functionality:**
 <br>
-Enter ? at any point to view the winning probabilities for all dice sets.
+Enter ? at any point to view the winning probabilities for all dice sets. The game resumes from where it was.
 <br>
 **Requirements**
 Node.js installed on your system.<br>
