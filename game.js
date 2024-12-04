@@ -211,6 +211,7 @@ if (diceSets.length < 2) {
     console.log("Please provide at least two sets of dice as command-line arguments.");
     process.exit(1);
 }
+//hello
 
 playGame(diceSets);
 
